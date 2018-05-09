@@ -1,17 +1,107 @@
 <!DOCTYPE html>
 <html>
-<head>
-</head>
-<body>
-<div id=header>
-<div class=cookies>0 Cookies!</div>
-<span id=multiplier>1</span>
-</div>
-<div id=content>
-<img src="https://puu.sh/tkC9V/42de08e4e8.png" alt="Cookie picture" id=cookie ontouchstart="zoom(1)" ontouchend="zoom(0)">
-</div>
-<div id=footer>
-<button onclick="upgrade()">Upgrade<br>(25)</button>
-</div>
-</body>
+    <head>
+        <title>Click da Click</title>
+    </head>
+ 
+    <body>
+ 
+    <div id="content"></div>
+ 
+    <div id="shop">
+    
+        <button id="power_up" class="item" onclick = "power()">
+            Power 5$
+        </button>
+        <p id="power_score" class="score_first">
+            1 PC
+        </p>
+        
+        <button id="superPower_up" class="item" onclick = "superPower()">
+            Super power 5000$
+        </button>
+        <p id="superPower_score" class="score">
+            1 X
+        </p>
+        
+        <button id="auto_up" class="item" onclick="auto_up()">
+            Worker 20$
+        </button>
+        <p id="auto_score" class="score">
+            0 PS
+        </p>
+        
+    <div id="background">
+        <p id="bgText">BACKGROUND</p>
+        <div id="bgcolor">
+        <button id="bg1" class="bg"
+           onclick="bg1()">
+           sell
+        </button>
+        <button id="bg2" class="bg"
+           onclick="bg2()">
+         50$
+        </button>
+        <button id="bg3" class="bg"
+           onclick="bg3()">
+           50$
+        </button>
+        <button id="bg4" class="bg"
+           onclick="bg4()">
+           50$
+        </button>
+        <button id="bg5" class="bg" 
+           onclick="bg5()">
+           50$
+        </button>
+        </div>
+        
+        <div id="bgcolor_2">
+        <button id="bg2_1" class="bg"
+           onclick="bg2_1()">
+           200$
+        </button>
+        <button id="bg2_2" class="bg"
+           onclick="bg2_2()">
+           200$
+        </button>
+        <button id="bg2_3" class="bg"
+           onclick="bg2_3()">
+           200$
+        </button>
+        <button id="bg2_4" class="bg"
+           onclick="bg2_4()">
+           200$
+        </button>
+        <button id="bg2_5" class="bg" 
+           onclick="bg2_5()">
+           200$
+        </button>
+        </div>
+    </div>
+    
+    </div>
+   
+    <p id="money">0$</p>
+  
+    <button id = "pay" ontouchstart = "first()" ontouchend = "second()" onclick = "clicker()"><b>Click!</b></button>
+   
+    <button id = "open_shop" onclick="shop()">↑Shop↑</button>
+   
+    <marquee direction="right" id="like">
+        This is my first game
+    </marquee>
+   
+   <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://dl.dropbox.com/s/z1wg8yc5kqqvh2q/CDC_main.js?raw=1"></script>
+    <script src="https://dl.dropbox.com/s/qi66mbksvisdf3b/CDC_buttons%27Changes.js?raw=1"></script>
+    <script src="https://dl.dropbox.com/s/najau7aglv221yp/CDC_openShop.js?raw=1"></script>
+    <script src="https://dl.dropbox.com/s/4iw95g27ihz2nrt/CDC_background.js?raw=1"></script>
+    <script src="https://dl.dropbox.com/s/lf0pwh5fggwg0j1/CDC_autoClickLvl1.js?raw=1"></script>
+    <script src="https://dl.dropbox.com/s/rld7fbzlf7inlxh/CDC_powerUpLvl1.js?raw=1"></script>
+    <script src="https://dl.dropbox.com/s/xfzkohrrtqb1iec/CDC_background2.js?raw=1"></script>
+    <script src="https://dl.dropbox.com/s/1birzhmmlfonhey/CDC_numbers.js?raw=1"></script>
+    <script src="https://dl.dropbox.com/s/nkisag3bdjrg5bw/CDC_multipleClick.js?raw=1"></script>
+    
+    </body>
 </html>
